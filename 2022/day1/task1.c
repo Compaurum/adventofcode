@@ -1,10 +1,6 @@
 #include <stdio.h>
-#include <stdlib.h>     /* exit */
-#include <unistd.h>     /* read, write, close */
-#include <string.h>     /* memcpy, memset */
-#include <sys/socket.h> /* socket, connect */
-#include <netinet/in.h> /* struct sockaddr_in, struct sockaddr */
-#include <netdb.h>      /* struct hostent, gethostbyname */
+#include <stdlib.h> /* exit */
+#include <string.h> /* memcpy, memset */
 
 void error(const char *msg)
 {
@@ -22,7 +18,7 @@ int main(void)
   }
 
   // Printing what is written in file
-  // character by character using loop.
+  // line by line using loop.
   char ch[20];
   int currentElfEnergy = 0;
   int maxElfEnergy = 0;
